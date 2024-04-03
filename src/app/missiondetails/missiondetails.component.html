@@ -1,0 +1,21 @@
+<div class="bg-white min-h-screen">
+    <h1 class="text-center p-5 text-5xl text-black">SpaceX Mission Details</h1>
+    <div class="rounded-md flex items-center box-content p-4 m-4 border-4 bg-blue-200">
+        <img src="{{launch.links.mission_patch_small}}" alt="mission_patch"/>
+        
+        <div class="pl-5">
+            <strong class="text-3xl text-black">Mission - {{launch.mission_name}}</strong>
+            <p class="text-black">Launch Year: {{launch.launch_year}}</p>
+            <br/>
+            <h3 class="text-2xl text-black">Rocket</h3>
+            <p class="text-black">Name: {{launch.rocket.rocket_name}}</p>
+            <p class="text-black">Type: {{launch.rocket.rocket_type}}</p>
+            <br/>
+            <h3 class="text-2xl text-black">Launch Site</h3>
+            <p class="text-black">Location: {{launch.launch_site.site_name_long}}</p>
+            <br/>
+            <h3 class="text-2xl text-black">Launch Details</h3>
+            <p class="text-black">{{launch.details}}</p>
+        </div>
+    </div>
+</div>
